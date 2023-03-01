@@ -3,12 +3,14 @@ navbar: white
 navbar-search-bg: #e5e5e5
 main-header:primary
 card-header: #f7f7f7
-sidebar-bg-dark: #051e34
+sidebar-bg-dark: #051e34, $blue-900
 sidebar-bg-light: #12293e
 *****/
 
 /* #region Common */
-
+:root {
+    --dash-dark-blue: #051e34;
+}
 /* #endregion Common */
 
 /* #region Debug */
@@ -16,6 +18,12 @@ sidebar-bg-light: #12293e
     height: 70px;
     background-color: black;
 }
+
+.debug .sidebar {
+    width: 70px;
+    height: calc(100vh - 70px);
+}
+
 /* #endregion Debug */
 
 /* #region Utilities */
@@ -25,3 +33,17 @@ sidebar-bg-light: #12293e
 /* #region Header */
 
 /* #endregion Header */
+
+/* #region Main */
+.sidebar {
+    background-color: var(--dash-dark-blue);
+}
+/* #endregion Main */
+
+/* #region Media Queries */
+@media screen and (min-width: 1200px) {
+    .debug .sidebar {
+        width: 150px;
+    }
+}
+/* #region Media Queries */
