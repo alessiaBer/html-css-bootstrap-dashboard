@@ -7,3 +7,21 @@ sidebar-bg-dark: #051e34
 sidebar-bg-light: #12293e
 *****/
 
+/* #region Common */
+
+/* #endregion Common */
+
+/* #region Debug */
+.debug nav {
+    height: 70px;
+    background-color: black;
+}
+/* #endregion Debug */
+
+/* #region Utilities */
+
+/* #endregion Utilities */
+
+/* #region Header */
+
+/* #endregion Header */
