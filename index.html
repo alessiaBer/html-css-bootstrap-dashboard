@@ -14,7 +14,50 @@
 </head>
 <body class="debug">
     <header id="app_header">
-        <nav></nav>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand p-0" href="#">
+                    <div class="navbar-toggler border-0">
+                        <img class="p-0 mobile_logo" src="./assets/img/mobile-logo.png" alt="#" height="50">
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <img class="w-auto h-100 me-auto" src="./assets/img/logo.svg" alt="#">
+                    </div>
+                </a>
+                <form class="d-flex" role="search">
+                    <input class="form-control border-0" type="search" placeholder=" Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                </form>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              
+                        <i class="fa-solid fa-bell"></i>
+                  
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="fa-solid fa-list-ul"></i>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="fa-solid fa-circle-question"></i>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <!-- /#app_header -->
     <main id="app_main" class="d-flex">

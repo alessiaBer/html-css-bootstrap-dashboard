@@ -10,14 +10,11 @@ sidebar-bg-light: #12293e
 /* #region Common */
 :root {
     --dash-dark-blue: #051e34;
+    --dash-search-bg: #e5e5e5;
 }
 /* #endregion Common */
 
 /* #region Debug */
-.debug nav {
-    height: 70px;
-    background-color: black;
-}
 
 .debug .sidebar {
     width: 70px;
@@ -40,7 +37,17 @@ sidebar-bg-light: #12293e
 /* #endregion Utilities */
 
 /* #region Header */
+nav form {
+    flex: 1 1 auto;
+}
 
+.mobile_logo {
+    margin: -1rem -1rem;
+}
+
+.form-control {
+    background-color: var(--dash-search-bg);
+}
 /* #endregion Header */
 
 /* #region Main */
