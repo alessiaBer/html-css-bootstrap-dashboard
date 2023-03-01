@@ -16,11 +16,6 @@ sidebar-bg-light: #12293e
 
 /* #region Debug */
 
-.debug .sidebar {
-    width: 70px;
-    height: calc(100vh - 60px);
-}
-
 .debug .main_content {
     width: calc(100% - 70px);
     background-color: aqua;
@@ -62,6 +57,14 @@ ul#dropdown_menu {
 /* #region Main */
 .sidebar {
     background-color: var(--dash-dark-blue);
+    width: 70px;
+    height: calc(100vh - 60px);
+    background-image: url(../img/sidebar-bg.png);
+}
+
+.side_text,
+.bottom_text {
+    font-size: 0.75rem;
 }
 
 .main_content {
@@ -73,12 +76,16 @@ ul#dropdown_menu {
 
 /* #region Media Queries */
 @media screen and (min-width: 1200px) {
-    .debug .sidebar {
+    .sidebar {
         width: 150px;
     }
 
     .debug .main_content {
         width: calc(100% - 150px);
+    }
+
+    .side_text {
+        display: block;
     }
 }
 /* #region Media Queries */
