@@ -18,7 +18,7 @@ sidebar-bg-light: #12293e
 
 .debug .sidebar {
     width: 70px;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 60px);
 }
 
 .debug .main_content {
@@ -37,16 +37,25 @@ sidebar-bg-light: #12293e
 /* #endregion Utilities */
 
 /* #region Header */
-nav form {
-    flex: 1 1 auto;
+nav {
+    height: 60px;
 }
 
 .mobile_logo {
     margin: -1rem -1rem;
 }
+nav form {
+    flex: 1 1 auto;
+}
 
 .form-control {
     background-color: var(--dash-search-bg);
+}
+
+ul#dropdown_menu {
+    position: absolute;
+    top: 100%;
+    right: 0 !important;
 }
 /* #endregion Header */
 
@@ -56,7 +65,7 @@ nav form {
 }
 
 .main_content {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 60px);
     overflow-y: auto;
 }
  

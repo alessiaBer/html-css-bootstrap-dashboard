@@ -14,54 +14,63 @@
 </head>
 <body class="debug">
     <header id="app_header">
+
         <nav class="navbar navbar-expand-lg bg-white">
             <div class="container-fluid">
+
                 <a class="navbar-brand p-0" href="#">
                     <div class="navbar-toggler border-0">
                         <img class="p-0 mobile_logo" src="./assets/img/mobile-logo.png" alt="#" height="50">
                     </div>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse">
                         <img class="w-auto h-100 me-auto" src="./assets/img/logo.svg" alt="#">
                     </div>
                 </a>
+                <!-- /logos -->
                 <form class="d-flex" role="search">
                     <input class="form-control border-0" type="search" placeholder=" Prova a cercare: Lezioni di Laravel" aria-label="Search">
                 </form>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              
-                        <i class="fa-solid fa-bell"></i>
-                  
-                </button>
+                <!-- /search_form-->      
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
-                            <i class="fa-solid fa-list-ul"></i>
+                            <i class="fa-solid fa-list-ul text-secondary"></i>
                         </a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
-                            <i class="fa-solid fa-circle-question"></i>
+                            <i class="fa-solid fa-circle-question text-secondary"></i>
                         </a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <i class="fa-solid fa-bell"></i>
+                            <i class="fa-solid fa-ellipsis-vertical text-secondary"></i>
                         </a>
                       </li>
                     </ul>
                 </div>
+                <!-- /navbar items -->
+                <div class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-bell text-warning"></i>
+                    </a>
+                    <ul class="dropdown-menu" id="dropdown_menu">
+                      <li><a class="dropdown-item" href="#">Profilo</a></li>
+                      <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+                <!-- /bell dropdown-menu-->
             </div>
         </nav>
+        <!-- /nav --> 
     </header>
     <!-- /#app_header -->
     <main id="app_main" class="d-flex">
-        <div class="sidebar"></div>
+        <div class="sidebar">
+
+        </div>
         <!-- /.sidebar -->
         <div class="main_content">
             <div class="main_header"></div>
