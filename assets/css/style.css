@@ -15,12 +15,9 @@ sidebar-bg-light: #12293e
 /* #endregion Common */
 
 /* #region Debug */
-
-.debug .main_content {
-    width: calc(100% - 70px);
-    background-color: aqua;
+.debug .main_header .col {
+    border: 1px dashed;
 }
-
 .debug #app_main .col-12 {
     border: 1px dashed;
     height: 400px;
@@ -43,6 +40,7 @@ nav form {
     flex: 1 1 auto;
 }
 
+span.input-group-text,
 .form-control {
     background-color: var(--dash-search-bg);
 }
@@ -70,6 +68,7 @@ ul#dropdown_menu {
 .main_content {
     height: calc(100vh - 60px);
     overflow-y: auto;
+    width: calc(100% - 70px);
 }
  
 /* #endregion Main */
@@ -80,12 +79,8 @@ ul#dropdown_menu {
         width: 150px;
     }
 
-    .debug .main_content {
+    .main_content {
         width: calc(100% - 150px);
-    }
-
-    .side_text {
-        display: block;
     }
 }
 /* #region Media Queries */

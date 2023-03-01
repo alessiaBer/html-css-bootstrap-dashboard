@@ -38,9 +38,14 @@
                     </a>
                     <!-- /logos -->
                     <form class="d-flex" role="search">
-                        <input class="form-control border-0" type="search"
+                        <div class="input-group has-validation">
+                            <span class="input-group-text border-0 rounded-0 rounded-start" id="inputGroupPrepend">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <input class="form-control border-0" type="search"
                             placeholder=" Prova a cercare: Lezioni di Laravel"
                             aria-label="Search">
+                        </div>
                     </form>
                     <!-- /search_form-->
                     <div class="collapse navbar-collapse flex-grow-0"
@@ -120,6 +125,7 @@
                         </li>
                     </ul>
                 </div>
+                <!-- /.sidebar_top -->
                 <div class="sidebar_bottom d-flex align-bottom justify-content-center py-1">
                     <a class="d-flex justify-content-center align-items-center py-1 text-decoration-none text-white" href="#">
                         <div class="bottom_icon">
@@ -128,16 +134,45 @@
                         <div class="bottom_text collapse d-lg-block ps-lg-3 fw-light">Admin</div>
                     </a>
                 </div>
+                <!-- /.sidebar_bottom -->
             </div>
             <!-- /.sidebar -->
+
             <div class="main_content">
-                <div class="main_header"></div>
+                <div class="main_header bg-primary text-white">
+                    <div class="container-fluid">
+                        <div class="row row-cols-1 row-cols-md-3">
+                            <div class="col order-md-3">
+                                <span>Nuovo Studente</span>
+                                <span class="plus_icon display-5">
+                                    <i class="far fa-plus-square"></i>
+                                </span>
+                            </div>
+                            <div class="col order-md-1">
+                                <span class="display-5">Boolean</span>
+                                <div class="pills_container">
+
+                                </div>
+                            </div>
+                            <div class="col order-md-2">
+                                <span>Studenti negli ultimi 30 minuti</span>
+                                <span class="display-5">125</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- /.main_header -->
                 <div class="main_body">
-                    <div class="container px-2 py-3">
+                    <div class="container-fluid px-2 py-3">
                         <div class="row">
-                            <div class="col-12 col-lg-8"></div>
-                            <div class="col-12 col-lg-4"></div>
+                            <div class="col-12 col-lg-8">
+                                <div class="card"></div>
+                                <div class="card"></div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="card"></div>
+                                <div class="card"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
