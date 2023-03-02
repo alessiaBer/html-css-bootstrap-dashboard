@@ -46,7 +46,7 @@ span.input-group-text,
 }
 
 .dropstart .dropdown-menu[data-bs-popper] {
-    margin-right: -1rem;
+    margin-right: -0.5rem;
 }
 /* #endregion Header */
 
