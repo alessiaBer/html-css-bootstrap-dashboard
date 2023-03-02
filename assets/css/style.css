@@ -22,6 +22,10 @@ nav {
     height: 55px;
 }
 
+nav .container-fluid {
+    flex-wrap: nowrap !important;
+}
+
 .mobile_logo {
     margin: -1rem -1rem;
 }
