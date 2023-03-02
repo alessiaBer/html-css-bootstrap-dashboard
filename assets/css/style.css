@@ -14,12 +14,6 @@ sidebar-bg-light: #12293e
 }
 /* #endregion Common */
 
-/* #region Debug */
-.debug .main_header .col {
-    border: 1px dashed;
-}
-/* #endregion Debug */
-
 /* #region Utilities */
 
 /* #endregion Utilities */
@@ -69,7 +63,14 @@ span.input-group-text,
 .rounded-pill {
     font-size: 0.8rem;
 }
- 
+
+.photo_input,
+.form-select,
+.offcanvas-body input,
+.offcanvas-body .input-group-text,
+.offcanvas-body .btn {
+    font-size: 0.8rem;
+}
 /* #endregion Main */
 
 /* #region Media Queries */

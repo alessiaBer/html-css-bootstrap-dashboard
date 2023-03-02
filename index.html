@@ -19,7 +19,7 @@
         <!-- my css-->
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
-    <body class="debug">
+    <body>
         <header id="app_header">
 
             <nav class="navbar navbar-expand-lg bg-white">
@@ -56,21 +56,21 @@
                                 <a class="nav-link active" aria-current="page"
                                     href="#">
                                     <i class="fa-solid fa-list-ul
-                                        text-secondary"></i>
+                                        text-secondary px-1"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page"
                                     href="#">
                                     <i class="fa-solid fa-circle-question
-                                        text-secondary"></i>
+                                        text-secondary px-1"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page"
                                     href="#">
                                     <i class="fa-solid fa-ellipsis-vertical
-                                        text-secondary"></i>
+                                        text-secondary px-1"></i>
                                 </a>
                             </li>
                         </ul>
@@ -79,7 +79,7 @@
                     <div class="nav-item dropdown dropstart">
                         <a class="nav-link" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-bell text-warning"></i>
+                            <i class="fa-solid fa-bell text-warning ps-3 ps-lg-2"></i>
                         </a>
                         <ul class="dropdown-menu top-100 end-0 my-2"
                             id="dropdown_menu">
@@ -152,19 +152,85 @@
             <!-- /.sidebar -->
 
             <div class="main_content">
-                <div class="main_header bg-primary text-white">
+                <div class="main_header bg-primary text-white py-3">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-12 col-md-4 col-lg-3 order-md-3">
-                                <span>Nuovo Studente</span>
-                                <span class="plus_icon fs-2">
-                                    <i class="far fa-plus-square"></i>
-                                </span>
+                            <div class="col-12 col-md-4 col-lg-3 order-md-3 d-flex align-items-center">
+                                <span class="align-self-lg-start py-lg-2">Nuovo Studente</span>
+                                <button class="btn btn-outline-light align-self-lg-start mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                    +
+                                </button>
+                                <div class="offcanvas offcanvas-end text-dark w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <form class="row g-2">
+                                            <div class="col-12 col-md-6">
+                                                <label for="inputFirstName" class="form-label">Nome</label>
+                                                <input type="text" class="form-control bg-white" id="inputFirstName">
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label for="inputLastName" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control bg-white" id="inputLastName">
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label for="inputFirstName" class="form-label">Email</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-text">@</div>
+                                                    <input type="text" class="form-control bg-white" id="autoSizingInputGroup">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control bg-white" id="inputPassword4">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress" class="form-label">Address</label>
+                                                <input type="text" class="form-control bg-white" id="inputAddress">
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <label for="inputCity" class="form-label">City</label>
+                                              <input type="text" class="form-control bg-white" id="inputCity">
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <label for="inputState" class="form-label">State</label>
+                                                <select id="inputState" class="form-select">
+                                                    <option selected>Choose...</option>
+                                                    <option>...</option>
+                                              </select>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                                <label for="inputZip" class="form-label">CAP</label>
+                                                <input type="text" class="form-control bg-white" id="inputZip">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="formFile" class="form-label">Foto</label>
+                                                <input class="form-control bg-white photo_input" type="file" id="formFile">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 pt-1">
+                                                <button type="button" class="btn btn-primary">Salva</button>
+                                                <button type="button" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-12 col-md-4 col-lg-6 order-md-1">
-                                <span class="fs-3">Boolean</span>
-                                <div class="pills_container d-inline-block">
-                                    <span class="badge rounded-pill text-bg-dark bg-opacity-25 fw-semibold">Piano blaze</span>
+                            <div class="col-12 col-md-4 col-lg-6 order-md-1 d-flex flex-column justify-content-center">
+                                <div class="top_pill_container d-flex py-2 pt-lg-0">
+                                    <span class="fs-3">Boolean</span>
+                                    <div class="pills_container ps-2 align-self-end pb-1">
+                                        <span class="badge rounded-pill text-bg-dark bg-opacity-25 fw-semibold">Piano blaze</span>
+                                    </div>
                                 </div>
                                 <div class="pills_container">
                                     <span class="badge rounded-pill text-bg-dark bg-opacity-25 fw-semibold">
@@ -189,9 +255,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 col-lg-3 order-md-2">
+                            <div class="col-12 col-md-4 col-lg-3 order-md-2 d-flex flex-column justify-content-center pt-3 pt-md-0">
                                 <span>Studenti negli ultimi 30 minuti</span>
-                                <span class="fs-3 d-block">125</span>
+                                <span class="fs-3">125</span>
                             </div>
                         </div>
                     </div>
@@ -210,20 +276,20 @@
                                             <thead>
                                                 <tr>
                                                     <th class="fw-normal" scope="col">Nome</th>
-                                                    <th class="fw-normal"  scope="col">Data inizio</th>
-                                                    <th class="fw-normal"  scope="col">ROI</th>
-                                                    <th class="fw-normal"  scope="col">Stato</th>
-                                                    <th class="fw-normal"  scope="col">Azioni</th>
+                                                    <th class="fw-normal collapse d-md-inline-block" scope="col">Data inizio</th>
+                                                    <th class="fw-normal collapse d-md-inline-block" scope="col">ROI</th>
+                                                    <th class="fw-normal" scope="col">Stato</th>
+                                                    <th class="fw-normal" scope="col">Azioni</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>
                                                         <img src="./assets/img/class-avatar.jpg" alt="Class Avatar" height="25px">
-                                                        Classe
+                                                        Classe 75
                                                     </td>
-                                                    <td>15 Feb 2021</td>
-                                                    <td>20%</td>
+                                                    <td class="collapse d-md-inline-block">15 Feb 2021</td>
+                                                    <td class="collapse d-md-inline-block">20%</td>
                                                     <td>
                                                         <span class="badge text-bg-success">Done</span>
                                                     </td>
@@ -235,10 +301,10 @@
                                                 <tr>
                                                     <td>
                                                         <img src="./assets/img/class-avatar.jpg" alt="Class Avatar" height="25px">
-                                                        Classe
+                                                        Classe 76
                                                     </td>
-                                                    <td>15 Feb 2021</td>
-                                                    <td>20%</td>
+                                                    <td class="collapse d-md-inline-block">16 Feb 2021</td>
+                                                    <td class="collapse d-md-inline-block">20%</td>
                                                     <td>
                                                         <span class="badge text-bg-success">Done</span>
                                                     </td>
@@ -250,10 +316,10 @@
                                                 <tr>
                                                     <td>
                                                         <img src="./assets/img/class-avatar.jpg" alt="Class Avatar" height="25px">
-                                                        Classe
+                                                        Classe 77
                                                     </td>
-                                                    <td>15 Feb 2021</td>
-                                                    <td>20%</td>
+                                                    <td class="collapse d-md-inline-block">17 Feb 2021</td>
+                                                    <td class="collapse d-md-inline-block">20%</td>
                                                     <td>
                                                         <span class="badge text-bg-warning text-white">Process</span>
                                                     </td>
@@ -265,10 +331,10 @@
                                                 <tr>
                                                     <td>
                                                         <img src="./assets/img/class-avatar.jpg" alt="Class Avatar" height="25px">
-                                                        Classe
+                                                        Classe 78
                                                     </td>
-                                                    <td>15 Feb 2021</td>
-                                                    <td>20%</td>
+                                                    <td class="collapse d-md-inline-block">18 Feb 2021</td>
+                                                    <td class="collapse d-md-inline-block">20%</td>
                                                     <td>
                                                         <span class="badge text-bg-success">Done</span>
                                                     </td>
