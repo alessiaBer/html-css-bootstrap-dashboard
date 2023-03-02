@@ -45,10 +45,8 @@ span.input-group-text,
     background-color: var(--dash-search-bg);
 }
 
-ul#dropdown_menu {
-    position: absolute;
-    top: 100%;
-    right: 0 !important;
+.dropstart .dropdown-menu[data-bs-popper] {
+    margin-right: -1rem;
 }
 /* #endregion Header */
 
