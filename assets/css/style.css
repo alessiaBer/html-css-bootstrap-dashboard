@@ -22,7 +22,7 @@ sidebar-bg-light: #12293e
 .offcanvas-body .btn,
 .fa-pencil-alt,
 .fa-trash {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 /* #endregion Utilities */
 
@@ -62,7 +62,7 @@ span.input-group-text,
 
 .sidebar_top a:hover,
 .sidebar_bottom a:hover {
-    background-color: rgba(125, 127, 137, 0.401);
+    background-color: rgba(217, 221, 239, 0.401);
 }
 
 .main_content {
@@ -106,6 +106,14 @@ span.input-group-text,
 }
 
 @media screen and (min-width: 1400px) {
+    .sidebar {
+        width: 10rem;
+    }
+
+    .main_content {
+        width: calc(100% - 10rem);
+    }
+
     .first_th {
         width: 60%;
     }
