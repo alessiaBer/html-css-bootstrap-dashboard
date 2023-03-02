@@ -60,6 +60,11 @@ span.input-group-text,
     font-size: 0.75rem;
 }
 
+.sidebar_top a:hover,
+.sidebar_bottom a:hover {
+    background-color: rgba(125, 127, 137, 0.401);
+}
+
 .main_content {
     height: calc(100vh - 55px);
     overflow-y: auto;
@@ -81,7 +86,7 @@ span.input-group-text,
 @media screen and (min-width: 992px) {
    .sidebar {
         width: 8rem;
-    } 
+    }
 
     .main_content {
         width: calc(100% - 8rem);
