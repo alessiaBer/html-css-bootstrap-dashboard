@@ -29,6 +29,9 @@ sidebar-bg-light: #12293e
 /* #endregion Utilities */
 
 /* #region Header */
+nav {
+    height: 55px;
+}
 
 .mobile_logo {
     margin: -1rem -1rem;
@@ -51,7 +54,7 @@ span.input-group-text,
 .sidebar {
     background-color: var(--dash-dark-blue);
     width: 5rem;
-    background-image: url(../img/sidebar-bg.png);
+    background-image: url('../img/sidebar-bg.png');
 }
 
 .side_text,
@@ -60,9 +63,10 @@ span.input-group-text,
 }
 
 .main_content {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 55px);
     overflow-y: auto;
     width: calc(100% - 5rem);
+    background-color: var(--bs-gray-100);
 }
  
 /* #endregion Main */

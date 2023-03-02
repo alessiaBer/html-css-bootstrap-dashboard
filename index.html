@@ -39,12 +39,13 @@
                     <!-- /logos -->
                     <form class="d-flex" role="search">
                         <div class="input-group has-validation">
-                            <span class="input-group-text border-0 rounded-0 rounded-start" id="inputGroupPrepend">
+                            <span class="input-group-text border-0 rounded-0
+                                rounded-start" id="inputGroupPrepend">
                                 <i class="fas fa-search"></i>
                             </span>
                             <input class="form-control border-0" type="search"
-                            placeholder="Prova a cercare: Lezioni di Laravel"
-                            aria-label="Search">
+                                placeholder="Prova a cercare: Lezioni di Laravel"
+                                aria-label="Search">
                         </div>
                     </form>
                     <!-- /search_form-->
@@ -80,7 +81,8 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-bell text-warning"></i>
                         </a>
-                        <ul class="dropdown-menu top-100 end-0 my-2" id="dropdown_menu">
+                        <ul class="dropdown-menu top-100 end-0 my-2"
+                            id="dropdown_menu">
                             <li><a class="dropdown-item" href="#">Profilo</a></li>
                             <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                             <li><a class="dropdown-item" href="#">Logout</a></li>
@@ -93,45 +95,56 @@
         </header>
         <!-- /#app_header -->
         <main id="app_main" class="d-flex">
-            
+
             <div class="sidebar d-flex justify-content-between
-                flex-column pt-3 min-vh-100">
+                flex-column pt-3">
                 <div class="sidebar_top">
                     <ul class="sidebar_menu list-unstyled">
                         <li>
-                            <a class="d-flex justify-content-center align-items-center py-1 text-decoration-none text-white" href="#">
+                            <a class="d-flex justify-content-center
+                                align-items-center py-1 text-decoration-none
+                                text-white" href="#">
                                 <div class="side_icon">
                                     <i class="fa-solid fa-house"></i>
                                 </div>
-                                <div class="side_text collapse d-lg-block ps-lg-3 fw-light">Home</div>
+                                <div class="side_text collapse d-lg-block
+                                    ps-lg-3 fw-light">Home</div>
                             </a>
                         </li>
                         <li>
-                            <a class="d-flex justify-content-center align-items-center py-1 text-decoration-none text-white" href="#">
+                            <a class="d-flex justify-content-center
+                                align-items-center py-1 text-decoration-none
+                                text-white" href="#">
                                 <div class="side_icon">
                                     <i class="fa-solid fa-chart-simple"></i>
                                 </div>
-                                <div class="side_text collapse d-lg-block ps-lg-3 fw-light">Stats</div>
+                                <div class="side_text collapse d-lg-block
+                                    ps-lg-3 fw-light">Stats</div>
                             </a>
                         </li>
                         <li>
-                            <a class="d-flex justify-content-center align-items-center
-                            py-1 text-decoration-none text-white" href="#">
+                            <a class="d-flex justify-content-center
+                                align-items-center
+                                py-1 text-decoration-none text-white" href="#">
                                 <div class="side_icon">
                                     <i class="fa-solid fa-signal"></i>
                                 </div>
-                                <div class="side_text collapse d-lg-block ps-lg-3 fw-light">Signals</div>
+                                <div class="side_text collapse d-lg-block
+                                    ps-lg-3 fw-light">Signals</div>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <!-- /.sidebar_top -->
-                <div class="sidebar_bottom d-flex align-bottom justify-content-center py-1">
-                    <a class="d-flex justify-content-center align-items-center py-1 text-decoration-none text-white" href="#">
+                <div class="sidebar_bottom d-flex align-bottom
+                    justify-content-center">
+                    <a class="d-flex justify-content-center align-items-center
+                        py-1 text-decoration-none text-white" href="#">
                         <div class="bottom_icon">
                             <i class="fa-solid fa-gear"></i>
                         </div>
-                        <div class="bottom_text collapse d-lg-block ps-lg-3 fw-light">Admin</div>
+                        <div class="bottom_text collapse d-lg-block ps-lg-3
+                            fw-light">Admin</div>
                     </a>
                 </div>
                 <!-- /.sidebar_bottom -->
@@ -166,7 +179,46 @@
                     <div class="container-fluid px-3 py-3">
                         <div class="row">
                             <div class="col-12 col-lg-8">
-                                <div class="card"></div>
+                                <div class="card">
+                                    <div class="card_header"></div>
+                                    <div class="card-body">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th class="fw-normal" scope="col">Nome</th>
+                                                    <th class="fw-normal"  scope="col">Data inizio</th>
+                                                    <th class="fw-normal"  scope="col">ROI</th>
+                                                    <th class="fw-normal"  scope="col">Stato</th>
+                                                    <th class="fw-normal"  scope="col">Azioni</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img src="./assets/img/class-avatar.jpg" alt="Class Avatar" height="30px">
+                                                        Classe
+                                                    </td>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td colspan="2">Larry the
+                                                        Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                                 <div class="card"></div>
                             </div>
                             <div class="col-12 col-lg-4">
