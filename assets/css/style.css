@@ -73,6 +73,10 @@ span.input-group-text,
     font-size: 0.8rem;
 }
 
+#offcanvasExample {
+    width: 100%;
+}
+
 .rounded-pill {
     font-size: 0.8rem;
 }
@@ -92,6 +96,10 @@ span.input-group-text,
         width: calc(100% - 8rem);
     }
 
+    #offcanvasExample {
+        width: 50%;
+    }
+    
     .first_th {
         width: 40%;
     }
