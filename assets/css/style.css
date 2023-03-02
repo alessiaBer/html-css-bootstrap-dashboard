@@ -65,6 +65,10 @@ span.input-group-text,
     background-color: var(--bs-gray-100);
     font-size: 0.8rem;
 }
+
+.rounded-pill {
+    font-size: 0.8rem;
+}
  
 /* #endregion Main */
 
