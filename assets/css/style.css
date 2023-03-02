@@ -33,6 +33,11 @@ nav form {
     flex: 1 1 auto;
 }
 
+input.form-control.border-0 {
+    font-size: 0.8rem;
+    padding-left: 0;
+}
+
 span.input-group-text,
 .form-control {
     background-color: var(--dash-search-bg);
