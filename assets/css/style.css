@@ -15,7 +15,15 @@ sidebar-bg-light: #12293e
 /* #endregion Common */
 
 /* #region Utilities */
-
+.photo_input,
+.form-select,
+.offcanvas-body input,
+.offcanvas-body .input-group-text,
+.offcanvas-body .btn,
+.fa-pencil-alt,
+.fa-trash {
+    font-size: 0.8rem;
+}
 /* #endregion Utilities */
 
 /* #region Header */
@@ -64,23 +72,29 @@ span.input-group-text,
     font-size: 0.8rem;
 }
 
-.photo_input,
-.form-select,
-.offcanvas-body input,
-.offcanvas-body .input-group-text,
-.offcanvas-body .btn {
-    font-size: 0.8rem;
+.first_th {
+    width: 50%;
 }
 /* #endregion Main */
 
 /* #region Media Queries */
 @media screen and (min-width: 992px) {
    .sidebar {
-        width: 10rem;
+        width: 8rem;
     } 
 
     .main_content {
-        width: calc(100% - 10rem);
+        width: calc(100% - 8rem);
+    }
+
+    .first_th {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .first_th {
+        width: 60%;
     }
 }
 /* #region Media Queries */
