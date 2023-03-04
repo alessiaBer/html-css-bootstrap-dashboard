@@ -1,6 +1,6 @@
 /* #region Common */
 :root {
-    --dash-dark-blue: #051e34;
+    --dash-sidebar-bg: #051e34;
     --dash-search-bg: #e5e5e5;
 }
 /* #endregion Common */
@@ -50,7 +50,7 @@ span.input-group-text,
 
 /* #region Main */
 .sidebar {
-    background-color: var(--dash-dark-blue);
+    background-color: var(--dash-sidebar-bg);
     width: 5rem;
     background-image: url('../img/sidebar-bg.png');
 }
